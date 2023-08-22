@@ -33,7 +33,7 @@ sudo mount.cifs "$share_address" "$mount_path" -o credentials=$HOME/.windowscred
 if [ $? -eq 0 ]; then
   echo "Шара успешно смонтирована."
     # Автомонтирование шары при загрузке
-sudo su -c "echo '"$share_address" "$mount_path" cifs user,rw,credentials=$HOME/test/.windowscredentials,iocharset=utf8,nofail,_netdev 0 0' >> /etc/fstab" 
+sudo su -c "echo '"$share_address" "$mount_path" cifs user,rw,credentials=$HOME/.windowscredentials,iocharset=utf8,nofail,_netdev 0 0' >> /etc/fstab" 
 else
   echo "Ошибка при монтировании шары."
 fi
