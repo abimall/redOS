@@ -16,13 +16,13 @@ Color_Off='\033[0m'       # Text Reset    #####
 
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
 
-sudo mv ex.nanorc .nanorc
+sudo mv /confF/ex.nanorc /confF/.nanorc
         sleep 1
-sudo mv ex.zshrc .zshrc
+sudo mv /confF/ex.zshrc /confF/.zshrc
         sleep 1
-sudo mv ex.p10k.zsh .p10k.zsh
+sudo mv /confF/ex.p10k.zsh /confF/.p10k.zsh
         sleep 1
-sudo cp -r .* $HOME/
+sudo cp -r /confF/.* $HOME/
 
 #sudo cp -r .zshrc $HOME/
 #sudo cp -r .p10k.zsh $HOME/
