@@ -32,6 +32,7 @@ sed -i 's/skin=default/skin=dracula256/' $HOME/.config/mc/ini
 
 
 
+
         echo ######
         echo ######
         echo ######
