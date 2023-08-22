@@ -1,11 +1,11 @@
 #!/bin/bash/
-mkdir -p /home/dfyz/.local/share/mc/skins && cp -r mcSkins/skins/* /home/dfyz/.local/share/mc/skins
+mkdir -p $HOME/.local/share/mc/skins && cp -r mcskin/* $HOME/.local/share/mc/skins
                 sleep 1
-mkdir -p /home/dfyz/.config/mc/
+mkdir -p $HOME/.config/mc/
                 sleep 1
-cp ini /home/dfyz/.config/mc/
+cp mcskin/ini $HOME/.config/mc/
                 sleep 1
-sed -i 's/skin=default/skin=dracula256/' /home/dfyz/.config/mc/ini 
+sed -i 's/skin=default/skin=dracula256/' $HOME/.config/mc/ini 
         echo #############################################################
         echo mc skins установлены
         echo #############################################################
