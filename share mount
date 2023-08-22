@@ -23,7 +23,7 @@ sudo chmod 600 $HOME/.windowscredentials
 
     # Монтирование шары
 #sudo mount.cifs "$share_address" "$mount_path" -o username="$username",password="$password"
-sudo mount.cifs "$share_address" "$mount_path" -o credentials=$HOME/test/.windowscredentials 
+sudo mount.cifs "$share_address" "$mount_path" -o credentials=$HOME/.windowscredentials 
 
 ###Отмонтировать сетевую SMB папку:
 ###sudo umount /mnt/sharefolder
