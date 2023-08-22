@@ -29,6 +29,7 @@ sudo cp -r /confF/.* $HOME/
 #sudo cp -r .nanorc $HOME/
 
 
+
         echo ######
         echo ######
         echo ######
