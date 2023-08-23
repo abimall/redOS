@@ -1,0 +1,19 @@
+#!/bin/bash
+
+sudo dnf update
+sudo dnf install createrepo
+createrepo --database /mnt/local_repo
+sudo touch  /etc/yum.repos.d/myrpm.repo
+sudo su -c "echo '[myrpm]' > /etc/yum.repos.d/myrpm.repo" 
+sudo su -c "echo 'name=myrpm' >> /etc/yum.repos.d/myrpm.repo" 
+sudo su -c "echo 'baseurl=file:///mnt/local_repo' >> /etc/yum.repos.d/myrpm.repo" 
+sudo su -c "echo 'gpgcheck=0' >> /etc/yum.repos.d/myrpm.repo" 
+
+
+echo установлены  репозитории
+
+
+dnf repolist | grep epel
+sleep 3
+sudo dnf upgrade -y && sudo dnf install python3  python3-pip zip unzip neofetch speedtest-cli tldr ncdu mc curl  zsh curl fzf exa bat ncdu cifs-utils -y
+mc
