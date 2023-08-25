@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 mkdir -p $HOME/.local/share/mc/skins && cp -r mcskin/* $HOME/.local/share/mc/skins
                 sleep 1
 mkdir -p $HOME/.config/mc/

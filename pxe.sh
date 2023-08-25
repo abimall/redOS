@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 su - 
 dnf install dhcp-server tftp-server syslinux httpd dnf-plugins-core -y
 
