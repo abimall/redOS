@@ -107,3 +107,4 @@ sudo cp -R confF/.nanorc $HOME
         echo ######
         echo ######
         echo ######
+zsh
