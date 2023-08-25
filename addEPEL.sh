@@ -2,7 +2,7 @@
 
 sudo dnf update
 sudo dnf config-manager --set-enabled crb
-sudo dnf install epel-release epel-next-release
+sudo dnf install epel-release epel-next-release -y
 echo установлены EPEL репозитории
 dnf repolist | grep epel
 sleep 3
