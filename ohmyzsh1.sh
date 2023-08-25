@@ -29,7 +29,17 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
                  sleep 1
 curl -LO https://github.com/muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_amd64.rpm &&  sudo rpm -i duf_0.6.2_linux_amd64.rpm  
 duf --version
+           echo ############################################################################
+            echo установка neofetch
+        sleep 2
+ curl https://raw.githubusercontent.com/dylanaraps/neofetch/7.1.0/neofetch > $HOME/neofetch.sh && sudo chmod +x $HOME/neofetch.sh && echo 'alias neofetch="sh $HOME/neofetch.sh"' >> $HOME/.zshrc
+           sleep 2
             echo ############################################################################
+            echo установка speedtest
+git clone https://github.com/sivel/speedtest-cli.git
+           
+           
+           echo ############################################################################
             echo установка OhMyZsh
                  sleep 1
 chsh -s /usr/bin/zsh
