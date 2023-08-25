@@ -23,12 +23,6 @@ sudo mv confF/ex.zshrc confF/.zshrc
 sudo mv confF/ex.p10k.zsh  confF/.p10k.zsh
         
 sudo cp confF/.* $HOME
-# замена скина MC
-mkdir -p $HOME/.local/share/mc/skins && mkdir -p $HOME/.config/mc/ cp -r mcskin/* $HOME/.local/share/mc/skins
-cp -r mcskin/* $HOME/.local/share/mc/skins && cp mcskin/ini $HOME/.config/mc/
-                sleep 1
-sed -i 's/skin=default/skin=dracula256/' $HOME/.config/mc/ini 
-
 
 
 
