@@ -36,7 +36,12 @@ duf --version
            sleep 2
             echo ############################################################################
             echo установка speedtest
-git clone https://github.com/sivel/speedtest-cli.git
+git clone https://github.com/sivel/speedtest-cli.git && sudo pip3 install speedtest-cli
+           sleep 1
+           echo ############################################################################
+            echo установка EXA
+curl https://sh.rustup.rs -sSf | sh && wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip && unzip exa-linux-x86_64-0.9.0.zip && sudo mv exa-linux-x86_64  /usr/local/bin/exa
+         
            
            
            echo ############################################################################
