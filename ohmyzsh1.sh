@@ -34,7 +34,7 @@ curl -LO https://github.com/muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_
 duf --version
             echo ############################################################################
             echo установка OhMyZsh
-                 sleep1
+                 sleep 1
 sudo chsh -s /usr/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

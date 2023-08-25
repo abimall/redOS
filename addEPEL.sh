@@ -9,3 +9,4 @@ sleep 3
 sudo dnf upgrade -y && sudo dnf install python3  python3-pip zip unzip neofetch speedtest-cli tldr ncdu mc curl fzf zsh curl exa bat ncdu cifs-utils -y
 mc
 
+#dnf config-manager --set-disabled <repo>
