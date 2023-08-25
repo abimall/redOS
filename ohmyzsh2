@@ -16,13 +16,12 @@ Color_Off='\033[0m'       # Text Reset    #####
 
 echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
 
-sudo mv /confF/ex.nanorc /confF/.nanorc
+sudo mv confF/ex.nanorc $HOME/.nanorc
         sleep 1
-sudo mv /confF/ex.zshrc /confF/.zshrc
+sudo mv confF/ex.zshrc $HOME/.zshrc
         sleep 1
-sudo mv /confF/ex.p10k.zsh /confF/.p10k.zsh
-        sleep 1
-sudo cp -r /confF/.* $HOME/
+sudo mv confF/ex.p10k.zsh  $HOME.p10k.zsh
+        
 
 # замена скина MC
 mkdir -p $HOME/.local/share/mc/skins && mkdir -p $HOME/.config/mc/ cp -r mcskin/* $HOME/.local/share/mc/skins
