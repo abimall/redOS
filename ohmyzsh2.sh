@@ -32,6 +32,8 @@ mv confF/ex.p10k.zsh  confF/.p10k.zsh
 cp -R confF/.* $HOME
 sudo cp -R confF/.nanorc $HOME
 
+echo 'alias neofetch="sh $HOME/neofetch.sh"' >> $HOME/.zshrc
+
 
         echo ######
         echo ######

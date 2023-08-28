@@ -32,7 +32,7 @@ duf --version
            echo ############################################################################
             echo установка neofetch
         sleep 2
- curl https://raw.githubusercontent.com/dylanaraps/neofetch/7.1.0/neofetch > $HOME/neofetch.sh && sudo chmod +x $HOME/neofetch.sh && echo 'alias neofetch="sh $HOME/neofetch.sh"' >> $HOME/.zshrc
+ curl https://raw.githubusercontent.com/dylanaraps/neofetch/7.1.0/neofetch > $HOME/neofetch.sh && sudo chmod +x $HOME/neofetch.sh
            sleep 2
             echo ############################################################################
             echo установка speedtest
