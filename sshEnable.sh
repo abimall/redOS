@@ -20,7 +20,7 @@ sudo sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config
 sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sudo systemctl enable sshd
 sudo systemctl start sshd
-sudo systemctl status sshd
+
 
 if systemctl is-active sshd >/dev/null 2>&1; then
     echo -e "${Green}  статус службы sshd.service :  "Активно""
@@ -30,14 +30,14 @@ fi
 sleep 2
 
 
-echo -e "${Yellow}             ____ ____  _   _   _____             _     _               "
-echo -e "${Yellow}            / ___/ ___|| | | | | ____|_ __   __ _| |__ | | ___          "
-echo -e "${Yellow}            \___ \___ \| |_| | |  _| | |_ \ / _| | '_ \| |/ _ \         "
-echo -e "${Yellow}             ___) |__) |  _  | | |___| | | | (_| | |_) | |  __/         "
-echo -e "${Yellow}            |____/____/|_| |_| |_____|_| |_|\__,_|_.__/|_|\___|         "
+echo -e "${Yellow}             ____ ____  _   _ ${Green}  _____             _     _               "
+echo -e "${Yellow}            / ___/ ___|| | | |${Green} | ____|_ __   __ _| |__ | | ___          "
+echo -e "${Yellow}            \___ \___ \| |_| |${Green} |  _| | |_ \ / _| | '_ \| |/ _ \         "
+echo -e "${Yellow}             ___) |__) |  _  |${Green} | |___| | | | (_| | |_) | |  __/         "
+echo -e "${Yellow}            |____/____/|_| |_|${Green} |_____|_| |_|\__,_|_.__/|_|\___|         "
 echo -e "${Yellow}      ##############################################################"
 echo -e "${Yellow}      ##############################################################"
-echo -e "${Yellow}      ##             ${Green}Для подключения по ssh из любой ОС          ${Yellow}##"
+echo -e "${Yellow}      ##             ${Green}Для подключения по ssh из любой ОС           ${Yellow}##"
 echo -e "${Yellow}      ##                                                          ${Yellow}##"
 echo -e "${Yellow}      ##      ${Green}использукйте комманду следующего вида               ${Yellow}##"
 echo -e "${Yellow}      ##            ${Green}ssh <userName>@<ip adress>                    ${Yellow}##"
