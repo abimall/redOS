@@ -16,13 +16,15 @@ Color_Off='\033[0m'       # Text Reset    #####
 
 echo -e "                       ${Red}разрешить и включить SSH${Purple}"
 sleep 2
-sudo firewall-cmd --permanent --add-port=22/tcp
-sudo sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config
-sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
-sudo systemctl enable sshd
-sudo systemctl start sshd
+sudo firewall-cmd --permanent --add-port=22/tcp #разрешить 22 порт в фаерволе
+sudo sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config #включение 22 порта для sshd
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config # разрешить вход по SSH по паролю
+sudo systemctl enable sshd #включение sshd в автозагрузку
+# перезапуск службы sshd
+sudo systemctl stop sshd 
+sudo systemctl start sshd 
 
-
+#проверка статуста sshd
 if systemctl is-active sshd >/dev/null 2>&1; then
     echo -e "${Green}  статус службы sshd.service :  "Активно""
 else
@@ -30,7 +32,9 @@ else
 fi
 sleep 2
 
-
+                               
+                                  #  информация о SSH и данные для подключения
+########################################################################################################                                  
 echo -e "${Yellow}             ____ ____  _   _ ${Green}  _____             _     _               "
 echo -e "${Yellow}            / ___/ ___|| | | |${Green} | ____|_ __   __ _| |__ | | ___          "
 echo -e "${Yellow}            \___ \___ \| |_| |${Green} |  _| | |_ \ / _| | '_ \| |/ _ \         "
