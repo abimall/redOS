@@ -7,4 +7,4 @@
 
 4. выполните колонирование репозитория && сделайте файлы типа .sh исполняемыми && выполните sshEnable.sh для включения ssh
    
-'git clone https://github.com/dfyzicka/centOS.git && sudo chmod +x /centOS/*.sh && sh /centOS/sshEnable.sh'
+`git clone https://github.com/dfyzicka/centOS.git && sudo chmod +x /centOS/*.sh && sh /centOS/sshEnable.sh`
