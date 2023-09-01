@@ -42,4 +42,4 @@ sudo chmod +x $HOME/redOS/*.sh
 cd $HOME/redOS
 ```
 и выполнить необходимый скрипт командой `./<filename>.sh` где `<filename>` - имя файла скрипта,
-или выполнить его используя команду `sh`, например `sh $HOME/redOS/<filename>.sh` - где `<filename>` - имя файла скрипта.
+или выполнить его используя команду `sh`, например: `sh $HOME/redOS/<filename>.sh` - где `<filename>` - имя файла скрипта.
