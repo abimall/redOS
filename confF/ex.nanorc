@@ -1,11 +1,10 @@
-
-set linenumbers  #нумерация строк
+set linenumbers  # добавить нумерация строк в nano
 
 set autoindent   #автоотступ
 
-set mouse  #включить мыш
+set mouse  #включить мыш в nano
 
-#set smooth  #плавна прокрутка
+#set smooth  #плавная прокрутка
 
 set tabsize 4  #табуляция 4 символа
 
