@@ -1,6 +1,6 @@
 !#/bin/bash
 
-echo установка Docker-CE и Docker-Compose для CentOS
+echo установка Docker-CE и Docker-Compose для redOS
 sleep 3
 sudo dnf -y update
 #добавление репозитория Docker и усттановка необходимых пакетов
