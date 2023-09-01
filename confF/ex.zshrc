@@ -1,49 +1,39 @@
-export MANOPT="-L ru"
+export MANOPT="-L ru" # man страницы на Русском по умолчанию если имеются
+#   tldr  лаконичный тезисный аналог man / для индексации нужно ввести tldr -u
+#   duf аналог df занятое пространство
+#   ncdu аналог du размеры файлов
 
-######===---- Поиск по соцсетям nala {username}
-########tldr  лаконичный тезисный аналог man / для индексации нужно ввести tldr -u
-########duf аналог df занятое пространство
-#######ncdu аналог du размеры файлов
-#######googledrive######
-alias gdm="sudo google-drive-ocamlfuse -headless -label mydrive -id $GD_CLIENTID -secret $GD_CLIENT_SECRET /mnt/googledrive"
-alias gdum="sudo fusermount -u /mnt/googledrive"
-############Поисk########
+######## Поисk ########
 alias fd="fdfind"
-# Example aliases
- alias nz="nano ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sl="exa -bghHliS"
-alias sla="exa -bghHliSa"
-#alias bat="batcat"
-alias cls="clear"
+alias nz="nano ~/.zshrc"  #редактировать файл конфигурации zsh
+alias sl="exa -bghHliS"   #современный аналог ls
+alias sla="exa -bghHliSa" #современный аналог ls -a
+alias cls="clear"         #очистка вывода на манер Шindows
+#alias dk="sudo dry"      #dockermanager
+#alias bt="bpytop"        #system monitor
+alias rem="sudo rm -rf"   #ОСТОРОЖНО удаление каталогов
+alias chsh="sudo chmod +x"#сделать файл исполняемым 
+
+##################systemctl######### алиасыы для systemctl
 alias sys="sudo systemctl"
-alias dk="sudo dry"    #dockermanager
-alias bt="bpytop" #system monitor
-alias rem="sudo rm -rf"
-alias isp="sudo chmod +x"
-##################systemctl#########
 alias systart="sudo systemctl start"
 alias systop="sudo systemctl stop"
-alias syss="sudo systemctl status"
+alias syst="sudo systemctl status"
 alias sysr="sudo systemctl restart"
+########################################################################################
+#######################################################################################
+#####################################################################################
+#### плагины ohMyZsh
+plugins=( 
+#git
+sudo
+zsh-autosuggestions
+zsh-interactive-cd
+#ls
+zsh-syntax-highlighting
+z
+)
 
-############WEBMIN#####################
-alias won="sudo systemctl start webmin.service"
-alias woff="sudo systemctl stop webmin.service"
-alias ws="sudo systemctl status webmin.service"
-#######################################
-#####################gpt###############
-alias gptsart="sudo systemctl start gpt.service"
-alias gptstop="sudo systemctl stop gpt.service"
-alias gptr="sudo systemctl restart gpt.service"
-alias gpts="sudo systemctl status gpt.service"
-######################################
-#################rollbot############
-alias rdstart="sudo systemctl start rolldice.service"
-alias rdstop="sudo systemctl stop rolldice.service"
-alias rdr="sudo systemctl restart rolldice.service"
-alias rds="sudo systemctl status rolldice.service"
-######################################
 
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -133,17 +123,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 ################################################################################################################
 
 
-plugins=( 
-#git
-sudo
-zsh-autosuggestions
-zsh-interactive-cd
-#ls
-zsh-syntax-highlighting
-z
-
-
-)
 
 ################################################################################################################
 
