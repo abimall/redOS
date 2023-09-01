@@ -11,16 +11,21 @@ git clone https://github.com/abimall/redOS.git && sudo chmod +x redOS/*.sh && sh
 ```
 
 # что делают скрипты
-dockerInstall.sh установка Docker-CE и Docker-Compose для redOS
 
-* kernelupdate.sh обновление ядра
+* sshEnable.sh - включить доступ по ssh - выполняет настройку sshd и firewall
 
-* mcskin.sh замена стандартной нечитаемой цветовой схемы MC
+* dockerInstall.sh - установка Docker-CE и Docker-Compose для redOS, а также терминальный менеджер управление для docker - dry
 
-* ohmyzsh1.sh запускать первым установка необходимых пакетов и ohMyZsh
+* kernelupdate.sh - обновление ядра RedOS - в текущем релизк до 6.1.ХХ
 
-* ohmyzsh2.sh запускать после ohmyzsh2.sh
+* mcskin.sh замена стандартной нечитаемой цветовой схемы MC на более userFriendlyInterface 
 
-* shareMount.sh подключение шар windows
+* shareMount.sh подключение шар windows  - после запуска следовать инструкциям
 
-* sshEnable.sh включить доступ по ssh
+
+# установка ohMyZshPowerLevel10k
+
+* ohmyzsh1.sh - запускать первым установка необходимых пакетов и ohMyZsh
+
+* ohmyzsh2.sh - запускать после ohmyzsh2.sh - установка PowerLevel10k необходимых пакетов и копирование файлов конфигурации  
+
