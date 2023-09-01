@@ -22,6 +22,7 @@ git clone https://github.com/abimall/redOS.git && sudo chmod +x redOS/*.sh && sh
 
 * shareMount.sh -  подключение шар windows  - после запуска следовать инструкциям
 
+* README.md - ты сейчас меня читаешь
 
 # установка ohMyZshPowerLevel10k
 
