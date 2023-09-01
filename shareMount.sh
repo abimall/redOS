@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sudo dnf install cifs-utils -y
 
     # укажите папку монтирования
