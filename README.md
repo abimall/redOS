@@ -18,9 +18,9 @@ git clone https://github.com/abimall/redOS.git && sudo chmod +x redOS/*.sh && sh
 
 * kernelupdate.sh - обновление ядра RedOS - в текущем релизк до 6.1.ХХ
 
-* mcskin.sh замена стандартной нечитаемой цветовой схемы MC на более userFriendlyInterface 
+* mcskin.sh - замена стандартной нечитаемой цветовой схемы MC на более `userFriendlyInterface` 
 
-* shareMount.sh подключение шар windows  - после запуска следовать инструкциям
+* shareMount.sh -  подключение шар windows  - после запуска следовать инструкциям
 
 
 # установка ohMyZshPowerLevel10k
