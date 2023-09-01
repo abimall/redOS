@@ -13,12 +13,14 @@ Color_Off='\033[0m'       # Text Reset    #####
 ###############################################
 ###############################################
 ###############################################
+ 
 
         echo -e "${Blue}***${Red}"##"${Green}#***${Yellow}#${Blue}*#${Yellow}#***#${Yellow}#***${Purple}#**${Cyan}*#***#***#${Blue}##***#${Yellow}*#*#***${Purple}##***#***${Blue}#**${Purple}"
         echo ############################################################################
        
                 sleep 1
-sudo dnf install zsh -y
+             # обновление списка репозиториев и установка необходимых пакетов   
+sudo dng update - y && sudo dnf install zsh python3  python3-pip ncdu dnf-plugins-core zip unzip  speedtest-cli  ncdu mc curl  zsh curl exa bat ncdu cifs-utils libgit2 cmake -y
 
             echo ############################################################################
             echo установка FZF
@@ -28,24 +30,24 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
             echo установка DUF
                  sleep 1
 curl -LO https://github.com/muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_amd64.rpm &&  sudo rpm -i duf_0.6.2_linux_amd64.rpm  
-duf --version
+
            echo ############################################################################
-            echo установка neofetch
-        sleep 2
+           echo установка neofetch
+                sleep 2
  curl https://raw.githubusercontent.com/dylanaraps/neofetch/7.1.0/neofetch > $HOME/neofetch.sh && sudo chmod +x $HOME/neofetch.sh
-           sleep 2
+                sleep 2
             echo ############################################################################
             echo установка speedtest
 git clone https://github.com/sivel/speedtest-cli.git && sudo pip3 install speedtest-cli
-           sleep 1
+                sleep 1
            echo ############################################################################
-            echo установка EXA
+           echo установка EXA
 curl https://sh.rustup.rs -sSf | sh && wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip && unzip exa-linux-x86_64-0.9.0.zip && sudo mv exa-linux-x86_64  /usr/local/bin/exa
          
            
            
            echo ############################################################################
-            echo установка OhMyZsh
+           echo установка OhMyZsh
                  sleep 1
 chsh -s /usr/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
