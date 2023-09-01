@@ -16,6 +16,7 @@ newgrp docker
 id -nG
 echo установка DRY - терминального менеджера для управления Docker
 sleep 3
-curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh && sudo chmod 755 /usr/local/bin/dry
+curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh 
+sudo chmod 755 /usr/local/bin/dry
 
 docker run hello-world
