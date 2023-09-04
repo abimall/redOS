@@ -16,7 +16,7 @@ Color_Off='\033[0m'       # Text Reset    #####
 
 echo -e "                       ${Red}разрешить и включить SSH${Purple}"
 sleep 2
-echo -e "$                      {Red}введите новый пароль для пользователя: $USER"
+echo -e "$                      {Red}введите новый пароль для пользователя:${Green} $USER ${Color_Off}"
 
 sudo passwd $USER
 sudo firewall-cmd --permanent --add-port=22/tcp #разрешить 22 порт в фаерволе
