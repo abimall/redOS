@@ -16,6 +16,9 @@ Color_Off='\033[0m'       # Text Reset    #####
 
 echo -e "                       ${Red}разрешить и включить SSH${Purple}"
 sleep 2
+echo -e "$                      {Red}введите новый пароль для пользователя: $USER"
+
+sudo passwd $USER
 sudo firewall-cmd --permanent --add-port=22/tcp #разрешить 22 порт в фаерволе
 sudo sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config #включение 22 порта для sshd
 sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config # разрешить вход по SSH по паролю
