@@ -12,7 +12,7 @@ if [ "$choice" == "y" ] || [ "$choice" == "Y" ]; then
     su - -c 'dnf update -y'                             # обновление системы
     su - -c 'dnf install redos-kernels6-release -y'     # подключения раздела репозитория kernels6, если версия ядра изменилась - заменить redos-kernels6-release на текущую версию релиза
     su - -c 'dnf makecache'                             # обновления кэша пакетов
-    sh - -c 'dnf update -y'                             # обновления ядра и ядрозависимых пакетов
+    su - -c 'dnf update -y'                             # обновления ядра и ядрозависимых пакетов
     su - -c 'reboot'                                    # перезагрузка
     
 elif [ "$choice" == "n" ] || [ "$choice" == "N" ]; then
