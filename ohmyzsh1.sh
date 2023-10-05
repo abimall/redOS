@@ -20,7 +20,7 @@ Color_Off='\033[0m'       # Text Reset    #####
        
                 sleep 1
              # обновление списка репозиториев и установка необходимых пакетов   
-sudo dnf update - y && sudo dnf install zsh python3  python3-pip ncdu dnf-plugins-core zip unzip   ncdu mc curl  zsh curl cifs-utils libgit2 fzf cmake -y
+sudo dnf update - y && sudo dnf install zsh python3  python3-pip ncdu dnf-plugins-core zip unzip   ncdu mc curl  zsh cifs-utils libgit2 fzf cmake -y
 
             echo ############################################################################
             echo установка FZF
